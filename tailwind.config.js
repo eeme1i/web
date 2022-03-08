@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "Helvetica", "Arial", "sans-serif"],
       },
+      dropShadow: {
+        white: "0PX 0px 5px rgb(255 255 255)",
+      },
     },
   },
   plugins: [],
