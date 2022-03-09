@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HoverLink from "./HoverLink";
 
 function Footer() {
   return (
@@ -11,25 +12,13 @@ function Footer() {
       </Link>
       <div className="text-right space-y-2">
         <div>
-          <Link href="/">
-            <a className="transition-all duration-200 hover:text-neutral-200">
-              Index
-            </a>
-          </Link>
+          <HoverLink url="/" value="Index" />
         </div>
         <div>
-          <Link href="/portfolio">
-            <a className="transition-all duration-200 hover:text-neutral-200">
-              Portfolio
-            </a>
-          </Link>
+          <HoverLink url="/portfolio" value="Portfolio" />
         </div>
         <div>
-          <Link href="/contact">
-            <a className="transition-all duration-200 hover:text-neutral-200">
-              Contact
-            </a>
-          </Link>
+          <HoverLink url="/contact" value="Contact" />
         </div>
       </div>
     </div>

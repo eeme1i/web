@@ -3,6 +3,8 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GreyLine from "../components/GreyLine";
+import Arrow from "../components/Arrow";
+import PortfolioItem from "../components/PortfolioItem";
 
 export default function Home() {
   return (
@@ -15,9 +17,37 @@ export default function Home() {
 
       <div className="relative h-full min-h-screen pt-8 max-w-[36rem] m-auto">
         <Header />
-        <main className="mt-16">
-          <p className="font-bold pb-4 text-neutral-300">Portfolio</p>
-          <div></div>
+        <main className="text-neutral-300 font-bold px-8 sm:px-0 my-16">
+          <p className="pb-4 ">Portfolio</p>
+          <div className="text-lg font-medium italic font-Newsreader">
+            <PortfolioItem
+              img="/portfolio/lownoise.jpg"
+              link="https://www.instagram.com/p/CaSW7AlM6sJ/"
+              title="low noise"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/01.jpg"
+              link="https://www.instagram.com/p/CZmcNyZsuqG/"
+              title="01"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/02.jpg"
+              link="https://www.instagram.com/p/CZWjjAJNbw4/"
+              title="s-4-pro"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/03.jpg"
+              link="https://www.instagram.com/p/CYrOamxMLKq/"
+              title="Vendetta"
+              date="2022"
+            />
+            <p className="not-italic font-inter text-sm text-neutral-400">
+              More coming soon.
+            </p>
+          </div>
         </main>
       </div>
       <GreyLine />

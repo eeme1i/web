@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HoverLink from "./HoverLink";
 
 function Header() {
   return (
@@ -10,21 +11,11 @@ function Header() {
         </a>
       </Link>
       <div className="space-x-4">
-        <Link href="/">
-          <a className="transition-all duration-200 hover:text-neutral-200">
-            Index
-          </a>
-        </Link>
-        <Link href="/portfolio">
-          <a className="transition-all duration-200 hover:text-neutral-200">
-            Portfolio
-          </a>
-        </Link>
-        <Link href="/contact">
-          <a className="transition-all duration-200 hover:text-neutral-200">
-            Contact
-          </a>
-        </Link>
+        <HoverLink url="/" value="Index" />
+
+        <HoverLink url="/portfolio" value="Portfolio" />
+
+        <HoverLink url="/contact" value="Contact" />
       </div>
     </header>
   );
