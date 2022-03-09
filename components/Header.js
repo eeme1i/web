@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="flex justify-between font-medium items-center">
+    <header className="px-8 sm:px-0 flex justify-between font-medium items-center">
       <Link href="/">
         <a className="transition-all duration-200 hover:drop-shadow-white flex space-x-4 items-center text-neutral-200">
           <img className="h-10 w-auto invert" src="/logo.svg" />

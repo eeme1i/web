@@ -18,17 +18,17 @@ export default function Home({ posts }) {
 
       <div className="relative h-full min-h-screen pt-8 max-w-[36rem] m-auto">
         <Header />
-        <main className="mt-16">
+        <main className="px-8 sm:px-0 mt-16">
           <div className=" text-neutral-300">
-            <p className="font-bold pb-4">About</p>
-            <div className="font-normal">
+            <p className="font-bold pb-4">About me</p>
+            <div className="font-normal pb-8">
               <p className="pb-4">
-                Hello! I&apos;m Eemeli, a second year student at{" "}
+                Hello, I&apos;m Eemeli, a second year student at{" "}
                 <a
                   href="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio"
                   target="_blank"
                   rel="noreferrer"
-                  className="underline decoration-neutral-400 transition-all duration-200 hover:decoration-neutral-200"
+                  className="underline decoration-neutral-500 transition-all duration-200 hover:decoration-neutral-200"
                 >
                   Porin Lukio
                 </a>
@@ -38,20 +38,20 @@ export default function Home({ posts }) {
                 Alongside my studies I like enjoy tinkering around with graphic
                 design. You can find some of my work at the{" "}
                 <Link href="/portfolio">
-                  <a className="underline decoration-neutral-400 transition-all duration-200 hover:decoration-neutral-200">
+                  <a className="underline decoration-neutral-500 transition-all duration-200 hover:decoration-neutral-200">
                     portfolio
                   </a>
                 </Link>{" "}
                 section.
               </p>
               <p className="pb-4">
-                I also enjoy playing around with web design! Some of my projects
+                I also enjoy playing around with web design. Some of my projects
                 are{" "}
                 <a
                   href="https://MEK-JS.vercel.app"
                   target="_blank"
                   rel="noreferrer"
-                  className="underline decoration-neutral-400 transition-all duration-200 hover:decoration-neutral-200"
+                  className="underline decoration-neutral-500 transition-all duration-200 hover:decoration-neutral-200"
                 >
                   MEK-JS
                 </a>
@@ -60,26 +60,38 @@ export default function Home({ posts }) {
                   href="https://porinlukio.fi"
                   target="_blank"
                   rel="noreferrer"
-                  className="underline decoration-neutral-400 transition-all duration-200 hover:decoration-neutral-200"
+                  className="underline decoration-neutral-500 transition-all duration-200 hover:decoration-neutral-200"
                 >
                   porinlukio.fi
                 </a>{" "}
-                and this very site!
+                and this very site.
               </p>
               <p className="pb-4">
                 If you&apos;d like to get in touch you can find ways to contact
                 me{" "}
                 <Link href="/contact">
-                  <a className="underline decoration-neutral-400 transition-all duration-200 hover:decoration-neutral-200">
+                  <a className="underline decoration-neutral-500 transition-all duration-200 hover:decoration-neutral-200">
                     here
                   </a>
                 </Link>
-                !
+                .
               </p>
-              <img
-                className="h-8"
-                src="https://emojicdn.elk.sh/%E2%9C%A8?style=apple"
-              />
+            </div>
+            <p className="font-bold pb-4">About this site</p>
+            <div className="font-normal">
+              <p className="pb-4">
+                Written in Next.js using TailwindCSS and hosted on Vercel. For
+                the typeface I've chosen Inter by{" "}
+                <a
+                  href="https://rsms.me/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline decoration-neutral-500 transition-all duration-200 hover:decoration-neutral-200"
+                >
+                  rsms
+                </a>
+                .
+              </p>
             </div>
           </div>
         </main>
@@ -88,6 +100,13 @@ export default function Home({ posts }) {
       <Footer />
     </div>
   );
+}
+
+{
+  /* <img
+  className="h-8"
+  src="https://emojicdn.elk.sh/%E2%9C%A8?style=apple"
+/> */
 }
 
 // https://www.youtube.com/watch?v=MrjeefD8sac
