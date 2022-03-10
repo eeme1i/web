@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GreyLine from "../components/GreyLine";
-import Arrow from "../components/Arrow";
 import PortfolioItem from "../components/PortfolioItem";
 
 export default function Home() {
