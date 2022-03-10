@@ -1,4 +1,4 @@
-function Arrow() {
+function Arrow({ value }) {
   return (
     <svg width="22" height="22" fill="none" viewBox="0 0 22 22">
       <path

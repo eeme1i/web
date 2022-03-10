@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GreyLine from "../components/GreyLine";
 import LinkStyle from "../components/LinkStyle";
+import ContactLink from "../components/ContactLink";
 // import fs from "fs";
 // import path from "path";
 // import matter from "gray-matter";
@@ -21,37 +22,45 @@ export default function Home({ posts }) {
         <main className="px-8 sm:px-0 mt-16">
           <div className=" text-neutral-300">
             <p className="font-bold pb-4">About me</p>
-            <div className="font-normal pb-8">
-              <div className="pb-4">
-                <p className="">
-                  Hello, I&apos;m Eemeli, a second year student at{" "}
-                  <LinkStyle
-                    url="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio"
-                    value="Porin Lukio"
-                  />
-                  .
-                </p>
-              </div>
-
-              <div className="pb-4">
-                <p className="">
-                  Alongside my studies I like enjoy tinkering around with
-                  graphic design. You can find some of my work at the{" "}
-                  <LinkStyle url="/portfolio" value="portfolio" /> section.
-                </p>
-              </div>
+            <div className="font-normal pb-12">
+              <p className="pb-4">
+                Hello, I&apos;m Eemeli, a second year student at{" "}
+                <LinkStyle
+                  url="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio"
+                  value="Porin Lukio"
+                />
+                .
+              </p>
 
               <p className="pb-4">
+                Alongside my studies I like enjoy tinkering around with graphic
+                design. You can find some of my work at the{" "}
+                <LinkStyle url="/portfolio" value="portfolio" /> section.
+              </p>
+
+              <p className="">
                 I also enjoy playing around with web design. Some of my projects
                 are <LinkStyle url="https://MEK-JS.vercel.app" value="MEK-JS" />
                 ,{" "}
                 <LinkStyle url="https://porinlukio.fi" value="porinlukio.fi" />{" "}
                 and this very site.
               </p>
-              <p className="pb-4">
-                If you&apos;d like to get in touch you can find ways to contact
-                me <LinkStyle url="/contact" value="here" />.
-              </p>
+            </div>
+
+            <div className="pb-12">
+              <p className="font-bold pb-4">Contact</p>
+              <div className="font-normal">
+                <ContactLink
+                  url="https://twitter.com/hieemeli"
+                  value="Twitter"
+                />
+                <ContactLink
+                  url="https://instagram.com/eemelihq"
+                  value="Instagram"
+                />
+                <ContactLink url="https://github.com/eeme1i" value="Github" />
+                <ContactLink url="mailto:'eeruoh@gmail.com'" value="Mail" />
+              </div>
             </div>
 
             <p className="font-bold pb-4">About this site</p>
@@ -59,7 +68,7 @@ export default function Home({ posts }) {
               <p className="pb-4">
                 Written in Next.js using TailwindCSS and hosted on Vercel. For
                 the typeface I&apos;ve chosen{" "}
-                <LinkStyle url="https://rsms.me/inter" value="inter" /> by{" "}
+                <LinkStyle url="https://rsms.me/inter" value="Inter" /> by{" "}
                 <LinkStyle url="https://rsms.me" value="rsms" /> &{" "}
                 <LinkStyle
                   url="https://fonts.google.com/specimen/Newsreader"
