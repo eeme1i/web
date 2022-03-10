@@ -6,13 +6,13 @@ function PortfolioItem({ img, link, title, date }) {
   return (
     <Link href={link}>
       <a target="_blank" rel="noreferrer" className="h-full w-full">
-        <div className="relative mb-8 h-96 w-full rounded-3xl">
+        <div className="relative mb-8 h-96 w-full rounded-lg">
           <div className="w-full h-full bg-neutral-800 absolute animate-pulse rounded-3xl"></div>
           <Image
             src={img}
             layout="fill"
             objectFit="cover"
-            className="rounded-3xl"
+            className="rounded-lg"
           />
           <div className="opacity-0 hover:opacity-100 absolute h-full w-full bg-neutral-900/[0.6] transition-all duration-150 ease-linear">
             <div className="flex justify-between pt-7 px-8">
