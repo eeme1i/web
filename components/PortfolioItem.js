@@ -6,7 +6,7 @@ function PortfolioItem({ img, link, title, date }) {
   return (
     <Link href={link}>
       <a target="_blank" rel="noreferrer" className="h-full w-full">
-        <div className="relative mb-8 h-96 w-full rounded-3xl">
+        <div className="relative mb-8 h-96 w-full rounded-3xl bg-neutral-800">
           <Image
             src={img}
             layout="fill"
