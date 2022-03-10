@@ -59,7 +59,7 @@ export default function Home({ posts }) {
             <div className="font-normal">
               <p className="pb-4">
                 Written in Next.js using TailwindCSS and hosted on Vercel. For
-                the typeface I've chosen{" "}
+                the typeface I&apos;ve chosen{" "}
                 <LinkStyle url="https://rsms.me/inter" value="inter" /> by{" "}
                 <LinkStyle url="https://rsms.me" value="rsms" /> &{" "}
                 <LinkStyle
