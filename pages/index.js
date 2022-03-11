@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GreyLine from "../components/GreyLine";
@@ -23,33 +24,46 @@ export default function Home({ posts }) {
         <Header />
         <main className="px-8 sm:px-0 mt-16">
           <div className="text-neutral-300">
-            <p className="font-bold pb-4">About me</p>
-            <div className="font-normal pb-12">
-              <p className="pb-4">
-                Hello, I&apos;m Eemeli, a second year student at{" "}
-                <LinkStyle
-                  url="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio"
-                  value="Porin Lukio"
-                />
-                .
-              </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+            >
+              <p className="font-bold pb-4">About me</p>
+              <div className="font-normal pb-12">
+                <p className="pb-4">
+                  Hello, I&apos;m Eemeli, a second year student at{" "}
+                  <LinkStyle
+                    url="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio"
+                    value="Porin Lukio"
+                  />
+                  .
+                </p>
 
-              <p className="pb-4">
-                Alongside my studies I like enjoy tinkering around with graphic
-                design. You can find some of my work at the{" "}
-                <LinkStyle url="/portfolio" value="portfolio" /> section.
-              </p>
+                <p className="pb-4">
+                  Alongside my studies I like enjoy tinkering around with
+                  graphic design. You can find some of my work at the{" "}
+                  <LinkStyle url="/portfolio" value="portfolio" /> section.
+                </p>
 
-              <p className="">
-                I also enjoy playing around with web design. Some of my projects
-                are <LinkStyle url="https://MEK-JS.vercel.app" value="MEK-JS" />
-                ,{" "}
-                <LinkStyle url="https://porinlukio.fi" value="porinlukio.fi" />{" "}
-                and this very site.
-              </p>
-            </div>
-
-            <div className="pb-12">
+                <p className="">
+                  I also enjoy playing around with web design. Some of my
+                  projects are{" "}
+                  <LinkStyle url="https://MEK-JS.vercel.app" value="MEK-JS" />,{" "}
+                  <LinkStyle
+                    url="https://porinlukio.fi"
+                    value="porinlukio.fi"
+                  />{" "}
+                  and this very site.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="pb-12"
+            >
               <p className="font-bold pb-4">Contact</p>
               <div className="font-normal">
                 <ContactLink
@@ -63,27 +77,33 @@ export default function Home({ posts }) {
                 <ContactLink url="https://github.com/eeme1i" value="Github" />
                 <ContactLink url="mailto:'eeruoh@gmail.com'" value="Mail" />
               </div>
-            </div>
+            </motion.div>
 
-            <p className="font-bold pb-4">About this site</p>
-            <div className="font-normal">
-              <p className="pb-4">
-                Written in Next.js using TailwindCSS and hosted on Vercel. For
-                the typeface I&apos;ve chosen{" "}
-                <LinkStyle url="https://rsms.me/inter" value="Inter" /> by{" "}
-                <LinkStyle url="https://rsms.me" value="rsms" /> &{" "}
-                <LinkStyle
-                  url="https://fonts.google.com/specimen/Newsreader"
-                  value="Newsreader"
-                  className="font-Newsreader"
-                />
-                .
-              </p>
-              <p>
-                Design of this site is hugely inspired by{" "}
-                <LinkStyle url="https://paco.me" value="paco.me" />.
-              </p>
-            </div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <p className="font-bold pb-4">About this site</p>
+              <div className="font-normal">
+                <p className="pb-4">
+                  Written in Next.js using TailwindCSS and hosted on Vercel. For
+                  the typeface I&apos;ve chosen{" "}
+                  <LinkStyle url="https://rsms.me/inter" value="Inter" /> by{" "}
+                  <LinkStyle url="https://rsms.me" value="rsms" /> &{" "}
+                  <LinkStyle
+                    url="https://fonts.google.com/specimen/Newsreader"
+                    value="Newsreader"
+                    className="font-Newsreader"
+                  />
+                  .
+                </p>
+                <p>
+                  Design of this site is hugely inspired by{" "}
+                  <LinkStyle url="https://paco.me" value="paco.me" />.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </main>
       </div>

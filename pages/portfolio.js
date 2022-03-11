@@ -1,10 +1,11 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GreyLine from "../components/GreyLine";
 import PortfolioItem from "../components/PortfolioItem";
 
-export default function Home() {
+export default function Home(router) {
   return (
     <div className="tracking-tight font-inter text-sm text-neutral-400 min-h-screen h-full bg-neutral-900 selection:bg-neutral-300">
       <Head>
@@ -17,9 +18,34 @@ export default function Home() {
 
       <div className="relative h-full min-h-screen pt-8 max-w-[36rem] m-auto">
         <Header />
-        <main className="text-neutral-300 font-bold px-8 sm:px-0 my-16">
-          <p className="pb-4 ">Portfolio</p>
-          <div className="text-lg font-medium italic font-Newsreader">
+        <motion.main
+          key={router.route}
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+            },
+            pageAnimate: {
+              opacity: 1,
+            },
+          }}
+          className="text-neutral-300 font-bold px-8 sm:px-0 my-16"
+        >
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="pb-4 "
+          >
+            Portfolio
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-lg font-medium italic font-Newsreader"
+          >
             <PortfolioItem
               img="/portfolio/lownoise.jpg"
               link="https://www.instagram.com/p/CaSW7AlM6sJ/"
@@ -47,8 +73,8 @@ export default function Home() {
             <p className="not-italic font-inter text-sm text-neutral-400">
               More coming soon.
             </p>
-          </div>
-        </main>
+          </motion.div>
+        </motion.main>
       </div>
       <GreyLine />
       <Footer />

@@ -1,31 +1,39 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Arrow from "./Arrow";
 
 function PortfolioItem({ img, link, title, date }) {
   return (
-    <Link href={link}>
-      <a target="_blank" rel="noreferrer" className="h-full w-full">
-        <div className="relative mb-8 h-96 w-full rounded-lg">
-          <div className="w-full h-full bg-neutral-800 absolute animate-pulse rounded-lg"></div>
-          <Image
-            src={img}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-          <div className="opacity-0 hover:opacity-100 absolute h-full w-full bg-neutral-900/[0.6] transition-all duration-150 ease-linear">
-            <div className="flex justify-between pt-7 px-8">
-              <div className="flex">
-                <p className="">{title}</p>
-                <Arrow />
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.2 * 0.3 }}
+    >
+      <Link href={link}>
+        <a target="_blank" rel="noreferrer" className="h-full w-full">
+          <div className="relative mb-8 h-96 w-full rounded-lg">
+            <div className="w-full h-full bg-neutral-800 absolute animate-pulse rounded-lg"></div>
+            <Image
+              src={img}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+            <div className="opacity-0 hover:opacity-100 absolute h-full w-full bg-neutral-900/[0.6] transition-all duration-150 ease-linear">
+              <div className="flex justify-between pt-7 px-8">
+                <div className="flex">
+                  <p className="">{title}</p>
+                  <Arrow />
+                </div>
+                <p>{date}</p>
               </div>
-              <p>{date}</p>
             </div>
           </div>
-        </div>
-      </a>
-    </Link>
+        </a>
+      </Link>
+    </motion.div>
   );
 }
 
