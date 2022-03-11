@@ -17,6 +17,9 @@ export default function Home({ posts }) {
         <link rel="icon" className="invert" href="/logo.svg" />
         <link rel="image_src" href="/prev.png" />
         <meta property="og:image" content="/prev.png" />
+        <meta name="twitter:picture" content="/prev.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://eem.works" />
       </Head>
 
       <div className="relative h-full min-h-screen pt-8 max-w-[36rem] m-auto">
