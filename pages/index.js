@@ -25,7 +25,7 @@ export default function Home({ posts }) {
 
       <div className="relative h-full min-h-screen pt-8 max-w-[36rem] m-auto">
         <Header />
-        <main className="px-8 sm:px-0 mt-16">
+        <main className="px-8 sm:px-0 my-16 pb-8">
           <div className="text-neutral-300">
             <motion.div
               initial={{ opacity: 0 }}
