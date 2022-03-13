@@ -9,7 +9,7 @@ function PortfolioItem({ img, link, title, date }) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ delay: 0.2 * 0.3 }}
+      transition={{ delay: 0.2 }}
     >
       <div className="relative mb-8 h-96 w-full rounded-lg">
         <div className="w-full h-full bg-neutral-800 absolute animate-pulse rounded-lg"></div>
