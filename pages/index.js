@@ -43,21 +43,10 @@ export default function Home({ posts }) {
                   .
                 </p>
 
-                <p className="pb-4">
+                <p className="">
                   Alongside my studies I like enjoy tinkering around with
                   graphic design. You can find some of my work at the{" "}
                   <LinkStyle url="/portfolio" value="portfolio" /> section.
-                </p>
-
-                <p className="">
-                  I also enjoy playing around with web design. Some of my
-                  projects are{" "}
-                  <LinkStyle url="https://MEK-JS.vercel.app" value="MEK-JS" />,{" "}
-                  <LinkStyle
-                    url="https://porinlukio.fi"
-                    value="porinlukio.fi"
-                  />{" "}
-                  and this very site.
                 </p>
               </div>
             </motion.div>
