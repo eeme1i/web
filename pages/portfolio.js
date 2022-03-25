@@ -50,6 +50,12 @@ export default function Home(router) {
             className="text-lg font-medium italic font-Newsreader"
           >
             <PortfolioItem
+              img="/portfolio/arc.jpg"
+              link="https://www.instagram.com/p/CaSW7AlM6sJ/"
+              title="arc"
+              date="2022"
+            />
+            <PortfolioItem
               img="/portfolio/lownoise.jpg"
               link="https://www.instagram.com/p/CaSW7AlM6sJ/"
               title="low noise"
