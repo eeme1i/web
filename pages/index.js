@@ -43,10 +43,24 @@ export default function Home({ posts }) {
                   .
                 </p>
 
-                <p className="">
+                <p className="pb-4">
                   Alongside my studies I like enjoy tinkering around with
                   graphic design. You can find some of my work at the{" "}
                   <LinkStyle url="/portfolio" value="portfolio" /> section.
+                </p>
+                <p className="">
+                  I also enjoy playing around with web design. Some examples are{" "}
+                  <LinkStyle
+                    url="https://countable-eeme1i.vercel.app/"
+                    value="Countable"
+                  />
+                  , a concept website for a Discord bot and{" "}
+                  <LinkStyle
+                    url="https://apod-eeme1i.vercel.app/"
+                    value="APOD"
+                  />
+                  , a redesign of NASA&apos;s Astronomy Picture of the Day
+                  website. (and also this site, obv.)
                 </p>
               </div>
             </motion.div>
