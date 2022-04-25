@@ -115,6 +115,7 @@ export default function Home({ posts }) {
       </div>
       <GreyLine />
       <Footer />
+      <a className="hidden" rel="me" href="https://mstdn.social/@eem">Mastodon</a>
     </div>
   );
 }
