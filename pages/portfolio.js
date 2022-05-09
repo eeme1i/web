@@ -50,6 +50,24 @@ export default function Home(router) {
             className="text-lg font-medium italic font-Newsreader"
           >
             <PortfolioItem
+              img="/portfolio/rnbw_ds.png"
+              link="https://twitter.com/hieemeli/status/1523337755123589121/photo/1"
+              title="ds"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/depth.png"
+              link="https://twitter.com/hieemeli/status/1517194551278112768/photo/1"
+              title="depth"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/interlinked.png"
+              link="https://www.instagram.com/p/CdQ10tgMj-p/"
+              title="interlined"
+              date="2022"
+            />
+            <PortfolioItem
               img="/portfolio/arc.jpg"
               link="https://www.instagram.com/p/CaSW7AlM6sJ/"
               title="arc"
