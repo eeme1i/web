@@ -49,18 +49,10 @@ export default function Home({ posts }) {
                   <LinkStyle url="/portfolio" value="portfolio" /> section.
                 </p>
                 <p className="">
-                  I also enjoy playing around with web design. Some examples are{" "}
-                  <LinkStyle
-                    url="https://countable-eeme1i.vercel.app/"
-                    value="Countable"
-                  />
-                  , a concept website for a Discord bot and{" "}
-                  <LinkStyle
-                    url="https://apod-eeme1i.vercel.app/"
-                    value="APOD"
-                  />
-                  , a redesign of NASA&apos;s Astronomy Picture of the Day
-                  website. (and also this site, obv.)
+                  I also enjoy playing around with web design. Feel free to
+                  visit my{" "}
+                  <LinkStyle url="https://github.com/eeme1i" value="Github" />
+                  {"."}
                 </p>
               </div>
             </motion.div>
@@ -72,10 +64,7 @@ export default function Home({ posts }) {
             >
               <p className="font-bold pb-4">Contact</p>
               <div className="font-normal">
-                <ContactLink
-                  url="https://mstdn.social/@eem"
-                  value="Mastodon"
-                />
+                <ContactLink url="https://mstdn.social/@eem" value="Mastodon" />
                 <ContactLink
                   url="https://twitter.com/hieemeli"
                   value="Twitter"
@@ -119,7 +108,9 @@ export default function Home({ posts }) {
       </div>
       <GreyLine />
       <Footer />
-      <a className="hidden" rel="me" href="https://mstdn.social/@eem">Mastodon</a>
+      <a className="hidden" rel="me" href="https://mstdn.social/@eem">
+        Mastodon
+      </a>
     </div>
   );
 }
