@@ -7,7 +7,7 @@ import PortfolioItem from "../components/PortfolioItem";
 
 export default function Home(router) {
   return (
-    <div className="tracking-tight font-inter text-sm text-neutral-400 min-h-screen h-full bg-neutral-900 selection:bg-neutral-300">
+    <div className="tracking-tight font-inter text-sm text-neutral-400 min-h-screen h-full bg-neutral-900 selection:bg-neutral-700">
       <Head>
         <title>Eemeli | Portfolio</title>
         <meta name="description" content="" />
@@ -50,6 +50,12 @@ export default function Home(router) {
             className="text-lg font-medium italic font-Newsreader"
           >
             <PortfolioItem
+              img="/portfolio/res.jpg"
+              link="https://twitter.com/hieemeli/status/1528778178742956032"
+              title=".res"
+              date="2022"
+            />
+            <PortfolioItem
               img="/portfolio/rnbw2.png"
               link=""
               title=">"
@@ -70,7 +76,7 @@ export default function Home(router) {
             <PortfolioItem
               img="/portfolio/interlinked.png"
               link="https://www.instagram.com/p/CdQ10tgMj-p/"
-              title="interlined"
+              title="interlinked"
               date="2022"
             />
             <PortfolioItem
