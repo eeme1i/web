@@ -50,6 +50,12 @@ export default function Home(router) {
             className="text-lg font-medium italic font-Newsreader"
           >
             <PortfolioItem
+              img="/portfolio/lines2.png"
+              link="https://twitter.com/hieemeli/status/1532746581216309248"
+              title="mirror"
+              date="2022"
+            />
+            <PortfolioItem
               img="/portfolio/res.jpg"
               link="https://twitter.com/hieemeli/status/1528778178742956032"
               title=".res"
