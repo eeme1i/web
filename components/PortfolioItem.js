@@ -22,7 +22,7 @@ function PortfolioItem({ img, link, title, date }) {
         <div className="opacity-0 hover:opacity-100 absolute h-full w-full bg-neutral-900/[0.6] transition-all duration-150 ease-linear">
           <div className="flex justify-between pt-7 px-8">
             <Link href={link}>
-              <a className="h-full w-full">
+              <a className="h-full">
                 <div className="flex">
                   <p className="">{title}</p>
                   <Arrow />

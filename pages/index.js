@@ -11,7 +11,7 @@ import ContactLink from "../components/ContactLink";
 
 export default function Home({ posts }) {
   return (
-    <div className="tracking-tight font-inter text-sm text-neutral-400 min-h-screen h-full bg-neutral-900 selection:bg-neutral-300">
+    <div className="tracking-tight font-inter text-sm text-neutral-400 min-h-screen h-full bg-neutral-900 selection:bg-neutral-700">
       <Head>
         <title>Eemeli | Index</title>
         <meta name="description" content="" />
@@ -108,9 +108,6 @@ export default function Home({ posts }) {
       </div>
       <GreyLine />
       <Footer />
-      <a className="hidden" rel="me" href="https://mstdn.social/@eem">
-        Mastodon
-      </a>
     </div>
   );
 }
