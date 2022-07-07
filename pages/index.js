@@ -48,12 +48,12 @@ export default function Home({ posts }) {
                   graphic design. You can find some of my work at the{" "}
                   <LinkStyle url="/portfolio" value="portfolio" /> section.
                 </p>
-                <p className="">
-                  I also enjoy playing around with web design. Feel free to
-                  visit my{" "}
-                  <LinkStyle url="https://github.com/eeme1i" value="Github" />
+                <p className="pb-4">
+                  I also enjoy playing around with webdev. Currently working on{" "}
+                  <LinkStyle url="https://lettuce.watch" value="Lettucewatch" />
                   {"."}
                 </p>
+                <p className=""></p>
               </div>
             </motion.div>
             <motion.div
