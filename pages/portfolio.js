@@ -50,6 +50,24 @@ export default function Home(router) {
             className="text-lg font-medium italic font-Newsreader"
           >
             <PortfolioItem
+              img="/portfolio/formfinalfinalfinal.png"
+              link="https://twitter.com/hieemeli/status/1556344665510641664"
+              title="All Nighter, Vol. 7"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/stack.jpg"
+              link="#"
+              title="Stack"
+              date="2022"
+            />
+            <PortfolioItem
+              img="/portfolio/untitled8c.png"
+              link="https://twitter.com/hieemeli/status/1554096473582747648/photo/1"
+              title="untitled8-crop"
+              date="2022"
+            />
+            <PortfolioItem
               img="/portfolio/lines2.png"
               link="https://twitter.com/hieemeli/status/1532746581216309248"
               title="mirror"
