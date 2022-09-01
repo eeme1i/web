@@ -35,7 +35,7 @@ export default function Home({ posts }) {
               <p className="font-bold pb-4">About me</p>
               <div className="font-normal pb-12">
                 <p className="pb-4">
-                  Hello, I&apos;m Eemeli, a second year student at{" "}
+                  Hello, I&apos;m Eemeli, a third year student at{" "}
                   <LinkStyle
                     url="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio"
                     value="Porin Lukio"
@@ -64,7 +64,6 @@ export default function Home({ posts }) {
             >
               <p className="font-bold pb-4">Contact</p>
               <div className="font-normal">
-                <ContactLink url="https://mstdn.social/@eem" value="Mastodon" />
                 <ContactLink
                   url="https://twitter.com/hieemeli"
                   value="Twitter"
