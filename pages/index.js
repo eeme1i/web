@@ -64,6 +64,7 @@ export default function Home({ posts }) {
             >
               <p className="font-bold pb-4">Contact</p>
               <div className="font-normal">
+                <ContactLink url="https://cohost.org/human" value="Cohost" />
                 <ContactLink
                   url="https://twitter.com/hieemeli"
                   value="Twitter"
