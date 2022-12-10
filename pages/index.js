@@ -71,7 +71,7 @@ export default function Home({ posts }) {
                   value="Twitter"
                 />
                 <ContactLink
-                  url="https://instagram.com/eemelihq"
+                  url="https://instagram.com/eee.me.li"
                   value="Instagram"
                 />
                 <ContactLink url="https://github.com/eeme1i" value="Github" />
