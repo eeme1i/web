@@ -23,8 +23,21 @@ export default function Contact() {
         <Header />
         <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
           <div className="px-8 mt-16 sm:px-0">
-            <p className="pb-4 font-bold">Contact</p>
-            <div className="grid w-full gap-x-32 sm:grid-cols-2">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="pb-4 font-bold"
+            >
+              Contact
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="grid w-full gap-x-32 sm:grid-cols-2"
+            >
               <ContactLink
                 url="https://mastodon.social/@eem"
                 value="Mastodon"
@@ -38,7 +51,7 @@ export default function Contact() {
               />
               <ContactLink url="https://github.com/eeme1i" value="Github" />
               <ContactLink url="mailto:'eeruoh@gmail.com'" value="Mail" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
