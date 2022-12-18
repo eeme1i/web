@@ -5,13 +5,10 @@ import Footer from "../components/Footer";
 import GreyLine from "../components/GreyLine";
 import LinkStyle from "../components/LinkStyle";
 import ContactLink from "../components/ContactLink";
-// import fs from "fs";
-// import path from "path";
-// import matter from "gray-matter";
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
-    <div className="tracking-tight font-inter text-sm text-neutral-400 min-h-screen h-full bg-neutral-900 selection:bg-neutral-700">
+    <div className="h-full min-h-screen text-sm tracking-tight font-inter text-neutral-400 bg-neutral-900 selection:bg-neutral-700">
       <Head>
         <title>Eemeli | Index</title>
         <meta name="description" content="" />
@@ -25,15 +22,15 @@ export default function Home({ posts }) {
 
       <div className="relative h-full min-h-screen pt-8 max-w-[36rem] m-auto">
         <Header />
-        <main className="px-8 sm:px-0 my-16 pb-8">
+        <main className="px-8 pb-8 my-16 sm:px-0">
           <div className="text-neutral-300">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
             >
-              <p className="font-bold pb-4">About me</p>
-              <div className="font-normal pb-12">
+              <p className="pb-4 font-bold">About me</p>
+              <div className="pb-12 font-normal">
                 <p className="pb-4">
                   Hello, I&apos;m Eemeli, a third year student at{" "}
                   <LinkStyle
@@ -62,8 +59,12 @@ export default function Home({ posts }) {
               transition={{ delay: 0.2 }}
               className="pb-12"
             >
-              <p className="font-bold pb-4">Contact</p>
-              <div className="font-normal">
+              <p className="pb-4 font-bold">Contact</p>
+              <div className="grid w-full sm:grid-cols-2">
+                <ContactLink
+                  url="https://mastodon.social/@eem"
+                  value="Mastodon"
+                />
                 <ContactLink url="https://cohost.org/human" value="Cohost" />
                 <ContactLink url="https://layers.to/em" value="Layers.to" />
                 <ContactLink
@@ -84,7 +85,7 @@ export default function Home({ posts }) {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              <p className="font-bold pb-4">About this site</p>
+              <p className="pb-4 font-bold">About this site</p>
               <div className="font-normal">
                 <p className="pb-4">
                   Written in Next.js using TailwindCSS and hosted on Vercel. For
@@ -112,45 +113,3 @@ export default function Home({ posts }) {
     </div>
   );
 }
-
-{
-  /* <img
-  className="h-8"
-  src="https://emojicdn.elk.sh/%E2%9C%A8?style=apple"
-/> */
-}
-
-// https://www.youtube.com/watch?v=MrjeefD8sac
-
-{
-  /* <p className="font-bold pb-8">Writings</p>;
-{
-  posts.map((post, index) => <Post post={post} />);
-} */
-}
-
-// export async function getStaticProps() {
-//   const files = fs.readdirSync(path.join("posts"));
-
-//   const posts = files.map((filename) => {
-//     const slug = filename.replace("md", "");
-
-//     const markdownWithMeta = fs.readFileSync(
-//       path.join("posts", filename),
-//       "utf-8"
-//     );
-
-//     const { data: frontmatter } = matter(markdownWithMeta);
-
-//     return {
-//       slug,
-//       frontmatter,
-//     };
-//   });
-
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// }
