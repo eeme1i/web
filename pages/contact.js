@@ -12,7 +12,7 @@ export default function Contact() {
         <title>Eemeli | Contact</title>
         <meta name="twitter:title" content="Eemeli | Contact" />
         <meta property="og:title" content="Eemeli | Contact" />
-        <meta name="twitter:text:title" content="" />
+        <meta name="twitter:text:title" content="Connect." />
         <meta name="description" content="" />
         <link rel="icon" className="invert" href="/logo.svg" />
         <link rel="image_src" href="/prev.png" />
