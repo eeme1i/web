@@ -10,6 +10,9 @@ export default function Contact() {
     <main className="h-full text-sm tracking-tight font-inter text-neutral-300 bg-neutral-900 selection:bg-neutral-700">
       <Head>
         <title>Eemeli | Contact</title>
+        <meta name="twitter:title" content="Eemeli | Contact" />
+        <meta property="og:title" content="Eemeli | Contact" />
+        <meta name="twitter:text:title" content="" />
         <meta name="description" content="" />
         <link rel="icon" className="invert" href="/logo.svg" />
         <link rel="image_src" href="/prev.png" />
