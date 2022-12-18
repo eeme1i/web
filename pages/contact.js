@@ -20,6 +20,7 @@ export default function Contact() {
         <meta name="twitter:picture" content="/prev.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:url" content="https://eem.works" />
+        <meta name="twitter:site" content="@hieemeli" />
       </Head>
 
       <div className="relative h-screen pt-8 max-w-[36rem] m-auto">
