@@ -47,7 +47,7 @@ export default function Home() {
                 </p>
                 <p className="pb-4">
                   I also enjoy playing around with webdev. Currently working on{" "}
-                  <LinkStyle url="https://lettuce.watch" value="Lettucewatch" />
+                  <LinkStyle url="https://insync.rocks" value="insync" />
                   {"."}
                 </p>
                 <p className=""></p>
